@@ -12,7 +12,7 @@ import 'rxjs/add/operator/map'
 export class VideoServiceProvider {
 
   constructor(public http: HttpClient) {}
-  apiKey = "AIzaSyDvQMSMj2XJJRxK08LO35EES2qmdggMVSk";
+  apiKey = "****";
   getVideos(parametros:{q:string,r:string}) {
       return this.http.get('https://www.googleapis.com/youtube/v3/search?key=' + this.apiKey + '&q=' + parametros.q + '&regionCode' + parametros.r +'&part=snippet,id&maxResults=5');
   }

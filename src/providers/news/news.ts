@@ -18,7 +18,7 @@ export class NewsProvider {
       var url = 'https://newsapi.org/v2/top-headlines?' +
         'language=' + parametros.r + '&' +
         'sortBy=popularity&' +
-        'apiKey=4cf3a43a66e8410b9d274384521326ee';
+        'apiKey=***';
       return this.http.get(url);
   }
 }
