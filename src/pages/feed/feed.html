@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+        <img class="title-image" src="./assets/imgs/logo.png" alt="">
+      {{language}}
+
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-slides style="height:200px;">
+      <ion-slide *ngFor="let video of videos">
+              <iframe width="90%" height="200px" [src]="'https://www.youtube.com/embed/'+video.id.videoId | safe"  data-tap-disabled="true"></iframe>
+      </ion-slide>
+    </ion-slides>
+    <ion-list (swipe)="swipeEvent($event)">
+      <ion-item style="padding: 0;padding-left: 6px;" *ngFor="let article of noticias">
+        <h2 style="width: 100%;     user-select: text;   white-space: initial;">{{article.title}}</h2>
+        <br>
+        <p style="width: 100%;      user-select: text;  white-space: initial;    max-height: 50px;" >{{article.description}}</p>
+        <button ion-button clear item-end (click)='openURL(article.url)'>View</button>
+      </ion-item>
+    </ion-list>
+</ion-content>

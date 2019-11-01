@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "707263310634",
+    "project_id": "firebase-multilingua"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707263310634:android:0f418e73f75e7728",
+        "android_client_info": {
+          "package_name": "ulince.multilingua.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "707263310634-n6vnq6fm14ue3tjoibqg2ctt0v8ebpul.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ulince.multilingua.app",
+            "certificate_hash": "4479aebfd0eee6bd8d1f7cbc2df07ae256145f74"
+          }
+        },
+        {
+          "client_id": "707263310634-5re0biuergkj53mlfu0unj1d1ajq3k5c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBL8FIBF_D2gGmh_1LVKg0lODlaRs6unk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

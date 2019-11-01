@@ -1,0 +1,252 @@
+import { Component } from '@angular/core';
+import { FeedPage } from '../feed/feed';
+import { SelectPage } from '../select/select';
+
+@Component({
+  templateUrl: 'tabs.html'
+})
+export class TabsPage {
+
+  tabLanguage = FeedPage;
+
+  public languages:[Object];
+
+  constructor() {
+      this.languages = [
+          {
+            'name':"English",
+            'flag': 'flag-gb',
+            'words': [
+                "the",
+                "be",
+                "to",
+                "of",
+                "and"
+                ,"a",
+                "in",
+                "that",
+                "have",
+                "I",
+                "it",
+                "for",
+                "not",
+                "on",
+                "with",
+                "he",
+                "as",
+                "you",
+                "do",
+                "at",
+                "this",
+                "but",
+                "his",
+                "by",
+                "from",
+                "they",
+                "we",
+                "say",
+                "her",
+                "she",
+
+            ],
+            'region': "en",
+            'status':false
+          },
+          {
+            'name':"Français",
+            'flag': 'flag-fr',
+            'words': [
+                "être",
+                "avoir",
+                "au",
+            	"avec",
+            	"moi",
+            	"quoi",
+            	"devoir",
+            	"oui",
+            	"ils",
+            	"comme",
+            	"venir"	,
+            	"sur",
+            	"toi",
+            	"ici",
+            	"rien",
+            	"lui",
+            	"bon",
+            	"là",
+            	"suivre",
+            	"pourquoi",
+            	"parler",
+            	"prendre",
+            	"cette",
+            	"quand",
+            	"alors"	,
+                "une chose",
+            	"croire",
+            	"aimer",
+                "troi"
+            ],
+            'region': "fr",
+            'status':false
+          },
+          {
+            'name':"Español",
+            'flag': 'flag-es',
+            'words':[
+                "porque",
+                "a veces",
+                "cuando",
+                "todo",
+                "nunca" ,
+                "feo",
+                "algunos",
+                "ser",
+                "vida",
+                "mentira",
+                "haber",
+                "por",
+                "con",
+                "casa",
+                "para",
+                "como" ,
+                "estar" ,
+                "tener" ,
+                "casi" ,
+                "pero" ,
+                "más" ,
+                "hacer" ,
+                "poder" ,
+                "decir" ,
+                "este" ,
+                "ir"
+            ],
+            'region':"es",
+            'status':false
+          },
+          {
+            'name':"Русский",
+            'flag': 'flag-ru',
+            'words': [
+                "и",
+        		"в",
+        		"не" ,
+        		"он" ,
+        		"на" ,
+        		"я" ,
+        		"что" ,
+        		"тот" ,
+        		"быть",
+         		"с",
+         		"а",
+        		"весь",
+         		"это" ,
+         		"как" ,
+         		"она" ,
+         		"по" ,
+         		"но" ,
+         		"они" ,
+         		"к" ,
+         		"у" ,
+         		"ты" ,
+         		"из" ,
+         		"мы" ,
+        		"за" ,
+         		"вы" ,
+         		"так" ,
+         		"же" ,
+         		"от" ,
+         		"сказать",
+         		"этот"
+            ],
+            'region': "ru",
+            'status':false
+          },
+          {
+            'name':"Deutsche",
+            'flag': 'flag-de',
+            'words': [
+                "das",
+                "ist",
+                "du",
+                "ich",
+                "nicht",
+                "vier",
+                "es",
+                "und",
+                "Sie",
+                "der",
+                "was",
+                "wir",
+                "zu",
+                "ein",
+                "er",
+                "in",
+                "sie",
+                "mir",
+                "mit",
+                "ja",
+                "wie",
+                "den",
+                "auf",
+                "mich",
+                "dass",
+                "so",
+                "hier",
+                "eine",
+                "wenn",
+                "hat"
+            ],
+            'region': "de",
+            'status':false
+          },
+          {
+            'name':"Italiano",
+            'flag': 'flag-it',
+            'words': [
+                "come","io","il suo","che","lui","era","per","su","sono","con","essi","essere","a","uno","avere","questo","da","da","caldo","parola","ma","cosa","alcuni","è","esso","voi","o","aveva","il","di"
+            ],
+            'region': "it",
+            'status':false
+          },
+          {
+            'name':"Norsk",
+            'flag': 'flag-no',
+            'words': [
+                "og",
+                "i",
+                "det",
+                "som",
+                "på",
+                "til",
+                "å",
+                "han",
+                "med",
+                "ikke",
+                "jeg",
+                "har",
+                "men",
+                "så",
+                "hadde",
+                "seg",
+                "fra",
+                "etter",
+                "også",
+                "skal",
+                "vi",
+                "kan",
+                "vil",
+                "hun",
+                "bare",
+                "nå",
+                "her",
+                "eller",
+                "ut",
+                "av"
+            ],
+            'region': "no",
+            'status':false
+          }
+      ];
+  }
+
+}

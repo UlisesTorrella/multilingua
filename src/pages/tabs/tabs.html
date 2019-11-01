@@ -1,0 +1,4 @@
+<ion-tabs>
+    <ion-tab *ngFor="let language of languages" [root]="tabLanguage" [tabTitle]="language.name"
+     [tabIcon]="language.flag" [rootParams]="language"></ion-tab>
+</ion-tabs>
